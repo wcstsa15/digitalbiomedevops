@@ -1,8 +1,8 @@
-local computer
-given:
-user:root
-password:password
-host:ip address
+#local computer
+#given:
+#user:root
+#password:password
+#host:ip address
 
 # https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server
 gen ssh key
@@ -16,6 +16,8 @@ usermod -aG sudo localuser
 # PasswordAuthentication no
 
 # Install nginx
+sudo apt-get update
+sudo apt-get install nginx
 
 #update firewall
 
@@ -27,6 +29,6 @@ sudo ufw allow 'Nginx HTTP'
 
 sudo ufw enable
 
-sudo apt-get update
-sudo apt-get install nginx
+#git clone site to /var/www
+
 
