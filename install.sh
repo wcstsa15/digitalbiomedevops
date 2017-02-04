@@ -6,7 +6,7 @@ apt-get -o Dpkg::Options::="--force-confnew" --force-yes -fuy dist-upgrade &&
     # Install Ruby and Chef
 #apt-get install -y ruby build-essential ruby-dev
 #gem install --no-rdoc --no-ri chef
-apt-get install nginx
+apt-get install -y nginx
 
 ufw allow 'Nginx HTTP'
 ufw allow 'OpenSSH'
