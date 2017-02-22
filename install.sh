@@ -13,4 +13,4 @@ ufw allow 'OpenSSH'
 ufw allow 'ssh'
 ufw --force enable
 
-reboot
+#reboot
